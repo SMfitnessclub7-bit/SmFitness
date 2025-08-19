@@ -19,6 +19,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 { value: "10", label: "Weeks" },
             ],
             quote: `"Sm Fitness changed my lifestyle and gave me confidence!"`
+        },
+        {
+            img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088621/WhatsApp_Image_2025-08-13_at_18.05.12_82182333_yyqkat.jpg",
+            name: "Sara’s Transformation",
+            stats: [
+                { value: "-20lbs", label: "Weight Loss" },
+                { value: "+10%", label: "Muscle Gain" },
+                { value: "10", label: "Weeks" },
+            ],
+            quote: `"Sm Fitness changed my lifestyle and gave me confidence!"`
         }
     ];
 
@@ -58,3 +68,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateSlide(currentSlide);
 });
+
