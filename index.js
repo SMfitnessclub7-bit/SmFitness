@@ -19,8 +19,39 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Transformation Slider
-    const transformationItems = [ /* ...same array... */ ];
+    // Transformation Slider - FIXED
+    const transformationItems = [
+        {
+            img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088621/WhatsApp_Image_2025-08-13_at_18.05.12_82182333_yyqkat.jpg",
+            name: "Mark's 12-Week Journey",
+            stats: {
+                weight: "-28lbs",
+                muscle: "+15%",
+                duration: "12"
+            },
+            quote: "The trainers at Sm Fitness helped me completely transform my body and mindset."
+        },
+        {
+            img: "https://via.placeholder.com/400x500", // Replace with your image
+            name: "Sarah's Transformation",
+            stats: {
+                weight: "-22lbs",
+                muscle: "+12%",
+                duration: "10"
+            },
+            quote: "I never thought I could achieve these results in just 10 weeks!"
+        },
+        {
+            img: "https://via.placeholder.com/400x500", // Replace with your image
+            name: "John's Fitness Journey",
+            stats: {
+                weight: "-35lbs",
+                muscle: "+18%",
+                duration: "16"
+            },
+            quote: "The personalized training and nutrition plan made all the difference."
+        }
+    ];
 
     const sliderContainer = document.querySelector('.transformation-slider');
     const prevBtn = document.querySelector('.prev-btn');
@@ -87,5 +118,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
-
 
