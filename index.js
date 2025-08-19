@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const transformations = [
         {
-            img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088621/WhatsApp_Image_2025-08-13_at_18.05.12_82182333_yyqkat.jpg",
+            img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088604/WhatsApp_Image_2025-08-13_at_18.05.12_fddb1781_mbude3.jpg",
             name: "Mark's 12-Week Journey",
             stats: [
                 { value: "-28lbs", label: "Weight Loss" },
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
             quote: `"The trainers at Sm Fitness helped me completely transform my body and mindset."`
         },
         {
-            img: "https://res.cloudinary.com/ddiffs1l5/image/upload/v1755631116/WhatsApp_Image_2025-08-20_at_00.45.01_ee6b7074_incojk.jpg",
+            img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088612/WhatsApp_Image_2025-08-13_at_18.05.12_5759d006_ip6tfk.jpg",
             name: "Sara’s Transformation",
             stats: [
                 { value: "-20lbs", label: "Weight Loss" },
@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     ];
 
     let currentSlide = 0;
-
     const transformationItem = document.querySelector(".transformation-item");
 
     function updateSlide(index) {
@@ -47,7 +46,6 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
     }
 
-    // Controls
     document.querySelector(".prev-btn").addEventListener("click", () => {
         currentSlide = (currentSlide - 1 + transformations.length) % transformations.length;
         updateSlide(currentSlide);
@@ -58,9 +56,5 @@ document.addEventListener("DOMContentLoaded", () => {
         updateSlide(currentSlide);
     });
 
-    // Initialize first slide
     updateSlide(currentSlide);
 });
-
-
-
