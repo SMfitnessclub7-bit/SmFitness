@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Transformation Slider - FIXED
+    // Transformation Slider - SIMPLIFIED FIX
     const transformationItems = [
         {
             img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088621/WhatsApp_Image_2025-08-13_at_18.05.12_82182333_yyqkat.jpg",
@@ -32,24 +32,24 @@ document.addEventListener('DOMContentLoaded', () => {
             quote: "The trainers at Sm Fitness helped me completely transform my body and mindset."
         },
         {
-            img: "https://via.placeholder.com/400x500", // Replace with your image
+            img: "https://via.placeholder.com/400x500/f5f5f5/333333?text=Transformation+2",
             name: "Sarah's Transformation",
             stats: {
                 weight: "-22lbs",
                 muscle: "+12%",
                 duration: "10"
             },
-            quote: "I never thought I could achieve these results in just 10 weeks!"
+            quote: "I never thought I could achieve these results in just 10 weeks! The personalized approach made all the difference."
         },
         {
-            img: "https://via.placeholder.com/400x500", // Replace with your image
+            img: "https://via.placeholder.com/400x500/f5f5f5/333333?text=Transformation+3",
             name: "John's Fitness Journey",
             stats: {
                 weight: "-35lbs",
                 muscle: "+18%",
                 duration: "16"
             },
-            quote: "The personalized training and nutrition plan made all the difference."
+            quote: "The combination of training and nutrition guidance helped me lose weight and gain muscle simultaneously."
         }
     ];
 
@@ -58,47 +58,40 @@ document.addEventListener('DOMContentLoaded', () => {
     const nextBtn = document.querySelector('.next-btn');
     let currentSlide = 0;
 
-    function renderSlide(index) {
+    // Function to update slide content
+    function updateSlide(index) {
         const item = transformationItems[index];
-        sliderContainer.innerHTML = `
-            <div class="transformation-item">
-                <div class="transformation-img">
-                    <img src="${item.img}" alt="Client Transformation">
-                </div>
-                <div class="transformation-info">
-                    <h3>${item.name}</h3>
-                    <div class="transformation-stats">
-                        <div class="stat-item">
-                            <span>${item.stats.weight}</span>
-                            <small>Weight ${item.stats.weight.startsWith('+') ? 'Gain' : 'Loss'}</small>
-                        </div>
-                        <div class="stat-item">
-                            <span>${item.stats.muscle}</span>
-                            <small>Muscle Gain</small>
-                        </div>
-                        <div class="stat-item">
-                            <span>${item.stats.duration}</span>
-                            <small>Weeks</small>
-                        </div>
-                    </div>
-                    <p>"${item.quote}"</p>
-                </div>
-            </div>
-        `;
+        const slide = document.querySelector('.transformation-item');
+        
+        // Update image
+        const imgElement = slide.querySelector('.transformation-img img');
+        imgElement.src = item.img;
+        imgElement.alt = "Client Transformation";
+        
+        // Update name
+        slide.querySelector('.transformation-info h3').textContent = item.name;
+        
+        // Update stats
+        const stats = slide.querySelectorAll('.stat-item span');
+        stats[0].textContent = item.stats.weight;
+        stats[1].textContent = item.stats.muscle;
+        stats[2].textContent = item.stats.duration;
+        
+        // Update quote
+        slide.querySelector('.transformation-info p').textContent = `"${item.quote}"`;
     }
 
+    // Set up slider controls
     if (prevBtn && nextBtn && sliderContainer) {
         prevBtn.addEventListener('click', () => {
             currentSlide = (currentSlide - 1 + transformationItems.length) % transformationItems.length;
-            renderSlide(currentSlide);
+            updateSlide(currentSlide);
         });
 
         nextBtn.addEventListener('click', () => {
             currentSlide = (currentSlide + 1) % transformationItems.length;
-            renderSlide(currentSlide);
+            updateSlide(currentSlide);
         });
-
-        renderSlide(currentSlide); // Initial render
     }
 
     // Smooth scrolling
@@ -118,4 +111,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
 
