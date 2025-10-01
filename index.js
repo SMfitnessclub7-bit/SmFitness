@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const transformations = [
         {
-            img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088604/WhatsApp_Image_2025-08-13_at_18.05.12_fddb1781_mbude3.jpg",
+           img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088621/WhatsApp_Image_2025-08-13_at_18.05.12_82182333_yyqkat.jpg",
             name: "Mark's 12-Week Journey",
             stats: [
                 { value: "-28lbs", label: "Weight Loss" },
@@ -21,7 +21,8 @@ document.addEventListener("DOMContentLoaded", () => {
             quote: `"Sm Fitness changed my lifestyle and gave me confidence!"`
         },
         {
-            img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088621/WhatsApp_Image_2025-08-13_at_18.05.12_82182333_yyqkat.jpg",
+        
+            img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088604/WhatsApp_Image_2025-08-13_at_18.05.12_fddb1781_mbude3.jpg",
             name: "Sara’s Transformation",
             stats: [
                 { value: "-20lbs", label: "Weight Loss" },
@@ -68,4 +69,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateSlide(currentSlide);
 });
+
 
