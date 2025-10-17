@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const transformations = [
         {
            img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088621/WhatsApp_Image_2025-08-13_at_18.05.12_82182333_yyqkat.jpg",
-            name: "Mark's 12-Week Journey",
+            name: "Arjun 12-Week Journey",
             stats: [
                 { value: "-28lbs", label: "Weight Loss" },
                 { value: "+15%", label: "Muscle Gain" },
@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
         {
             img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088612/WhatsApp_Image_2025-08-13_at_18.05.12_5759d006_ip6tfk.jpg",
-            name: "Sara’s Transformation",
+            name: "sai Transformation",
             stats: [
                 { value: "-20lbs", label: "Weight Loss" },
                 { value: "+10%", label: "Muscle Gain" },
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
         {
         
             img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088604/WhatsApp_Image_2025-08-13_at_18.05.12_fddb1781_mbude3.jpg",
-            name: "Sara’s Transformation",
+            name: "nikhil Transformation",
             stats: [
                 { value: "-20lbs", label: "Weight Loss" },
                 { value: "+10%", label: "Muscle Gain" },
@@ -69,5 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateSlide(currentSlide);
 });
+
 
 
