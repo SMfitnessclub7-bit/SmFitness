@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
            img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088621/WhatsApp_Image_2025-08-13_at_18.05.12_82182333_yyqkat.jpg",
             name: "Arjun 12-Week Journey",
             stats: [
-                { value: "-28lbs", label: "Weight Loss" },
+                { value: "-20kgs", label: "Weight Loss" },
                 { value: "+15%", label: "Muscle Gain" },
                 { value: "12", label: "Weeks" },
             ],
@@ -14,9 +14,9 @@ document.addEventListener("DOMContentLoaded", () => {
             img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088612/WhatsApp_Image_2025-08-13_at_18.05.12_5759d006_ip6tfk.jpg",
             name: "sai Transformation",
             stats: [
-                { value: "-20lbs", label: "Weight Loss" },
+                { value: "6kgs", label: "Weight Loss" },
                 { value: "+10%", label: "Muscle Gain" },
-                { value: "10", label: "Weeks" },
+                { value: "4", label: " Weeks" },
             ],
             quote: `"Sm Fitness changed my lifestyle and gave me confidence!"`
         },
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             img: "https://res.cloudinary.com/dmy7kknrc/image/upload/v1755088604/WhatsApp_Image_2025-08-13_at_18.05.12_fddb1781_mbude3.jpg",
             name: "nikhil Transformation",
             stats: [
-                { value: "-20lbs", label: "Weight Loss" },
+                { value: "15kgs", label: "Weight Loss" },
                 { value: "+10%", label: "Muscle Gain" },
                 { value: "10", label: "Weeks" },
             ],
@@ -69,6 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     updateSlide(currentSlide);
 });
+
 
 
 
